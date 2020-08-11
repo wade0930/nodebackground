@@ -60,11 +60,11 @@ export default {
             localStorage.setItem("eleToken", token);
 
             // 解析token
-            const decode = jwt_decode(token);
+            // const decode = jwt_decode(token);
 
-            // 儲存資料
-            this.$store.dispatch("setIsAutnenticated", !this.isEmpty(decode));
-            this.$store.dispatch("setUser", decode);
+            // // 儲存資料
+            // this.$store.dispatch("setIsAutnenticated", !this.isEmpty(decode));
+            // this.$store.dispatch("setUser", decode);
 
             // 頁面跳轉
             this.$router.push("/index");
